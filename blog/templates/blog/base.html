@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to WBR</h1>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
